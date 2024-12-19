@@ -1,5 +1,6 @@
-const app = require('./app');
+import app from "./app.js";
+import { PORT } from "./config.js";
 
-app.listen(app.get('port'), () => {
-    console.log("Servidor escuchando en el puerto", app.get("port"));
-});
+app.listen(PORT);
+
+console.log("Server on port", PORT);
